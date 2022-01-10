@@ -1,0 +1,2 @@
+awk -F'\t' '{a[substr($1, 1, 10)]+=$2}END{for(i in a){print i"\t"a[i]}}'|sort  -t'|' -k1n
+cat  ../make-ipinyou-data/1458/train.log.txt|awk -F'\t' '{print substr($5,0,12)"|"$24}'|awk -F'|' '{mm=substr($1,11,2);ymdh=substr($1,1,10);if(mm>=0&&mm<15){mm="00"}else if(mm>=15&&mm<30){mm="15"}else if (mm>=30&&mm<45){mm="30"}else{mm="45"};a[ymdh mm]+=$2}END{for(i in a){print i"|"a[i]}}'|sort  -t'|' -k1n > flow_model_train_budget.csv
