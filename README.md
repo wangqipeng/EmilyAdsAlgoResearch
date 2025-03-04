@@ -1,5 +1,5 @@
 Project Target:  
-1.Tracking and research the cut-edging algorithm in programmatic advertising and reproduce the result of the influential papers   
+1.Tracking and research the cutting-edge algorithm in programmatic advertising and reproduce the result of the influential papers   
 2.Make them more efficient and reliable to deploy in production environment   
 
 Directory:  
